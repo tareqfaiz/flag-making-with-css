@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Making flags with CSS</title>
+
+   <style>
+.outerborder{
+   background-color: red;
+   height: 300px;
+   width: 450px;
+   left: 50px;
+   top: 50px;
+   margin-bottom: 150px;
+   position: relative;
+   
+
+}
+
+.outerborder > div {
+   background-color: blueviolet;
+   height: 100px;
+   width: 100%;
+   top: 100px;
+   position: absolute;
+
+}
+
+.outerborder > div >div {
+
+      height: 120px;
+      width: 120px;
+      border-radius: 50%;
+      top: -10px;
+      left: 160px;
+      background-color: aquamarine;
+      position: absolute;
+}
+
+h1{
+   font-family: Helvetica, sans-serif;
+   size: 2rem;
+   font-style: italic;
+   font-weight: 600;
+   font-stretch: extra-condensed;
+   color: darkorange;
+}
+
+h1.secondflag {
+   color: cornflowerblue;
+   display: inline-block;
+   font-style: normal;
+   font-variant:small-caps;
+   font-family:'Times New Roman', serif;
+   background-color: blue;
+   
+
+}
+
+.blue-box{
+      background-color:darkgreen;
+      width: 400px;
+      height: 250px;
+      position: relative;
+      top: 50px;
+      left: 100px;
+  
+    }
+
+
+    .red-circle {
+      background-color: red;
+      height: 150px;
+      width: 150px;
+      position: absolute;
+      border-radius: 50%;
+      top: 50px;
+      left:120px
+   }
+
+
+
+   </style>
+
+
+</head>
+<body>
+
+   <h1>
+      <ol>
+   <li>
+      <p>Flag of an Unknown Country</p>
+   </li>
+      </ol>
+  </h1>
+
+   <div class="outerborder">
+      
+      <div>
+         <div>
+            <div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+<h1 class="secondflag">
+   <ol start="2">
+      <li>Flag of Bangladesh</li>
+   </ol>
+
+   
+</h1>
+
+<div class="blue-box">
+        <div class="red-circle">
+        </div>
+      </div>
+   
+</body>
+</html>
